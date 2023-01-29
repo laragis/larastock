@@ -1,8 +1,8 @@
-import i18next from 'i18next';
-
-import ETF from './ETF';
+import QuyETFList from './QuyETFList/QuyETFList';
 import Home from './Home';
-import QuyMo from './QuyMo';
+import QuyMoList from './QuyMoList/QuyMoList';
+import QuyMoDetail from './QuyMoDetail/QuyMoDetail';
+import QuyETFDetail from './QuyETFDetail/QuyETFDetail';
 
 const ExampleConfig = {
   settings: {
@@ -17,19 +17,27 @@ const ExampleConfig = {
     },
     {
       path: 'quy-mo',
-      element: <QuyMo />,
+      element: <QuyMoList />,
+    },
+    {
+      path: 'quy-mo/view/:id',
+      element: <QuyMoDetail />,
     },
     {
       path: 'quy-etf',
-      element: <ETF />,
+      element: <QuyETFList />,
+    },
+    {
+      path: 'quy-etf/view/:code',
+      element: <QuyETFDetail />,
     },
     {
       path: 'so-sanh',
-      element: <ETF />,
+      element: <Home />,
     },
     {
       path: 'dau-tu',
-      element: <ETF />,
+      element: <Home />,
     },
   ],
 };

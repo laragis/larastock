@@ -12,7 +12,14 @@ import store from './store';
 import AppContext from './AppContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: 1
+    },
+  },
+});
 
 const withAppProviders = Component => props => {
   const WrapperComponent = () => (

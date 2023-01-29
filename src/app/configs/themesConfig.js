@@ -24,9 +24,9 @@ const themesConfig = {
         white: 'rgb(255, 255, 255)',
       },
       primary: {
-        light: '#64748b',
-        main: '#1e293b',
-        dark: '#0f172a',
+        light: '#FFE3BF',
+        main: '#FFB049',
+        dark: '#FF8619',
         contrastText: darkPaletteText.primary,
       },
       secondary: {

@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stock
 
-## Available Scripts
+https://github.com/phamdinhkhanh/vnquant
+https://github.com/thinh-vu/vnstock
 
-In the project directory, you can run:
+https://finfo-api.vndirect.com.vn/v4/company_profiles?q=code:HPG
+https://finfo-api.vndirect.com.vn/v4/stocks?fields=code,shortName,companyName,companyNameEng,floor,status,listedDate&q=code:HPG
+https://finfo-api.vndirect.com.vn/v4/technical_signals?q=strategy:cipShort~code:HPG
+https://finfo-api.vndirect.com.vn/v4/ratios/latest?filter=itemCode:52002,52001,53007,&where=code:HPG~reportDate:gt:2022-09-16&order=reportDate&fields=itemCode,value
+https://finfo-api.vndirect.com.vn/v4/industry_classification?q=industryLevel:3~industryCode:1750
+https://finfo-api.vndirect.com.vn/v4/ratios/latest?where=reportDate:gt:2022-09-16~itemCode:51003&filter=code:TLH,HSV,MEL,TVN,DPS,CKA,TNI,TTS,TMG,KCB,CKD,KVC,BCA,CBI,NSH,TNS,VGL,ITQ,TDS,VCA,TIS,NKG,HPG,HMC,KMT,HLA,TKU,SMC,TNB,HSG,VGS,KKC,DTL,POM&order=reportDate
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://finfo-api.vndirect.com.vn/v4/industry_classification?q=codeList:HPG~industryLevel:1,2,3,4
+https://finfo-api.vndirect.com.vn/v4/industry_classification?q=codeList:FUEVFVND~industryLevel:1,2,3,4
+https://finfo-api.vndirect.com.vn/v4/shareholders?sort=ownershipPct:desc&q=code:HPG~ownershipPct:gte:5
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm run test`
+https://finfo-api.vndirect.com.vn/v4/ratios?q=code:FPT,VNINDEX~reportDate:2023-01-27~ratioCode:PRICE_CHG_PCT_CR_1M,PRICE_CHG_PCT_CR_3M,PRICE_CHG_PCT_CR_6M,PRICE_CHG_PCT_CR_YD,PRICE_CHG_PCT_CR_1Y,PRICE_CHG_PCT_CR_3Y,PRICE_CHG_PCT_CR_5Y&size=111100
+https://finfo-api.vndirect.com.vn/v4/stock_prices?sort=date&size=1500&q=code:FUEVFVND~date:gte:2023-01-01~date:lte:2023-01-19
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+FUEKIVFS,E1VFVN30,FUEVN100,FUEIP100,FUEKIV30,FUEDCMID,FUESSV50,FUESSVFL,FUESSV30,FUEMAV30,FUEVFVND

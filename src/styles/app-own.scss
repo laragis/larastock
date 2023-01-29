@@ -1,0 +1,8 @@
+a.link, a:not([role=button])[target=_blank] {
+  background: none;
+  border-bottom: none;
+}
+
+a.link:hover, a:not([role=button])[target=_blank]:hover {
+  background: none;
+}
