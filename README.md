@@ -18,6 +18,7 @@ https://finfo-api.vndirect.com.vn/v4/shareholders?sort=ownershipPct:desc&q=code:
 
 https://finfo-api.vndirect.com.vn/v4/ratios?q=code:FPT,VNINDEX~reportDate:2023-01-27~ratioCode:PRICE_CHG_PCT_CR_1M,PRICE_CHG_PCT_CR_3M,PRICE_CHG_PCT_CR_6M,PRICE_CHG_PCT_CR_YD,PRICE_CHG_PCT_CR_1Y,PRICE_CHG_PCT_CR_3Y,PRICE_CHG_PCT_CR_5Y&size=111100
 https://finfo-api.vndirect.com.vn/v4/stock_prices?sort=date&size=1500&q=code:FUEVFVND~date:gte:2023-01-01~date:lte:2023-01-19
+https://finfo-api.vndirect.com.vn/v4/stock_prices?sort=date&size=1500&q=code:FUEVFVND~date:2023-01-19
 
 
 FUEKIVFS,E1VFVN30,FUEVN100,FUEIP100,FUEKIV30,FUEDCMID,FUESSV50,FUESSVFL,FUESSV30,FUEMAV30,FUEVFVND
