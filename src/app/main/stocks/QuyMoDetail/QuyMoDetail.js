@@ -11,6 +11,7 @@ import useProductSIPQuery from 'app/queries/useProductSIPQuery';
 import OtherWidget from './widgets/OtherWidget';
 import useProductNAVHistoryQuery from 'app/queries/useProductNAVHistoryQuery';
 import FusePageSimple from '@fuse/core/FusePageSimple';
+import AmCharts from 'app/shared-components/AmCharts/AmCharts';
 
 function CardInfo({id, data}) {
 
@@ -54,6 +55,8 @@ function QuyMoDetail() {
           <Stack spacing={2}>
             {data && <CardInfo id={id} data={data} />}
             <DautuWidget />
+
+            <AmCharts />
           </Stack>
         </Container>
       )}

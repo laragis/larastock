@@ -54,8 +54,6 @@ function DautuWidget(){
 
   const getChangePct = (code) => find(data, {code})?.changePct
 
-  console.log(data);
-
   return (
     <Card>
       <CardContent>
