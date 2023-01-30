@@ -115,7 +115,7 @@
     },
     "scripts": {
         "start": "react-app-rewired --openssl-legacy-provider start",
-        "build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build",
+        "build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired --openssl-legacy-provider build",
         "test": "react-app-rewired test --env=node",
         "eject": "react-app-rewired eject",
         "build-docs": "babel-node --presets @babel/preset-env src/app/main/documentation/material-ui-components/build.js",
