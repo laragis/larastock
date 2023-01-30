@@ -145,7 +145,7 @@ function QuyMoList(props) {
   return (
     <Root
       header={
-        <div className="p-24">
+        <div className="px-24 py-20">
           <h2 className="uppercase font-semibold">Quỹ mở</h2>
         </div>
       }

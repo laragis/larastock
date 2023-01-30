@@ -40,7 +40,7 @@ const inputGlobalStyles = (
       },
       'a:not([role=button]):not(.MuiButtonBase-root)': {
         color: theme.palette.secondary.main,
-        textDecoration: 'underline',
+        // textDecoration: 'underline',
         '&:hover': {},
       },
       'a.link, a:not([role=button])[target=_blank]': {

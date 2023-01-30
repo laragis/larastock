@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import useProductQuery from 'app/queries/useProductQuery';
 import DautuWidget from './widgets/DautuWidget';
@@ -10,23 +10,19 @@ import Heading from './Heading';
 import useProductSIPQuery from 'app/queries/useProductSIPQuery';
 import OtherWidget from './widgets/OtherWidget';
 import useProductNAVHistoryQuery from 'app/queries/useProductNAVHistoryQuery';
+import FusePageSimple from '@fuse/core/FusePageSimple';
 
-function CardInfo() {
-  const { id } = useParams();
+function CardInfo({id, data}) {
 
   const { data: navHistory } = useProductNAVHistoryQuery({ productId: id });
-  const { data } = useProductQuery(id);
   const { data: sip } = useProductSIPQuery(id);
 
   if (!data) return null;
 
-
   return (
     <Box>
-      <Heading data={data} />
-
-      <div className="grid md:grid-cols-2 gap-16 mt-20">
-        <div className="flex gap-16 flex-col">
+      <div className="grid md:grid-cols-3 gap-16 mt-20">
+        <div className="flex gap-16 flex-col col-span-2">
           <div className="grid sm:grid-cols-2 gap-16">
             <NAVWidget data={data} navHistory={navHistory} />
 
@@ -47,13 +43,21 @@ function CardInfo() {
 }
 
 function QuyMoDetail() {
+  const { id } = useParams();
+  const { data } = useProductQuery(id);
+
   return (
-    <Box p={3}>
-      <Stack spacing={2}>
-        <CardInfo />
-        <DautuWidget />
-      </Stack>
-    </Box>
+    <FusePageSimple
+      header={(data && <Container><Heading className="py-20" data={data} /></Container>)}
+      content={(
+        <Container className="pb-20">
+          <Stack spacing={2}>
+            {data && <CardInfo id={id} data={data} />}
+            <DautuWidget />
+          </Stack>
+        </Container>
+      )}
+    />
   );
 }
 

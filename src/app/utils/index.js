@@ -19,3 +19,7 @@ export const formatNumber = (NAV, format = '0,0.[00]') => {
 export const NAVColorClass = (nav) => {
   return isNil(nav) ? '' : (nav > 0 ? 'text-green-400' : 'text-red-400')
 }
+
+export const colorClass = (value) => {
+  return isNil(value) ? '' : (value > 0 ? 'text-green-400' : 'text-red-400')
+}

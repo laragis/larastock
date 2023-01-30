@@ -18,8 +18,6 @@ function DatLenhWidget({ data, sip }) {
     lastTransferDateTime
   } = sip || {}
 
-  console.log(sip);
-
 
   return (
     <Card className="p-12 h-full">

@@ -8,12 +8,12 @@ const config = {
       style: 'fixed',
     },
     toolbar: {
-      display: true,
+      display: false,
       style: 'static',
       position: 'below',
     },
     footer: {
-      display: true,
+      display: false,
       style: 'fixed',
     },
     leftSidePanel: {
