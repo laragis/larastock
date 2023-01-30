@@ -1,5 +1,5 @@
 import QuyETFList from './QuyETFList/QuyETFList';
-import Home from './Home';
+import Home from './Home/Home';
 import QuyMoList from './QuyMoList/QuyMoList';
 import QuyMoDetail from './QuyMoDetail/QuyMoDetail';
 import QuyETFDetail from './QuyETFDetail/QuyETFDetail';

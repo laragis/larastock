@@ -11,7 +11,7 @@ const getStocks = (params) =>
     }
   });
 
-function useProductsQuery(params, options = {}) {
+function useStocksQuery(params, options = {}) {
   return useQuery({
     queryKey: ['stock', 'list', params],
     queryFn: () => getStocks(params),
@@ -20,4 +20,4 @@ function useProductsQuery(params, options = {}) {
   });
 }
 
-export default useProductsQuery;
+export default useStocksQuery;

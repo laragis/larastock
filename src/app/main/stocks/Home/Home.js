@@ -1,7 +1,9 @@
 import { styled } from '@mui/material/styles';
-import { useTranslation } from 'react-i18next';
 import FusePageSimple from '@fuse/core/FusePageSimple';
-import DemoContent from '@fuse/core/DemoContent';
+import { Box, Container } from '@mui/material';
+import Widget1 from './widgets/Widget1';
+import Widget2 from './widgets/Widget2';
+import Widget3 from './widgets/Widget3';
 
 const Root = styled(FusePageSimple)(({ theme }) => ({
   '& .FusePageSimple-header': {
@@ -17,21 +19,22 @@ const Root = styled(FusePageSimple)(({ theme }) => ({
 }));
 
 function HomePage(props) {
-  const { t } = useTranslation('examplePage');
 
   return (
     <Root
-      header={
-        <div className="p-24">
-          <h4>{t('TITLE')}</h4>
-        </div>
-      }
       content={
-        <div className="p-24">
-          <h4>Content</h4>
-          <br />
-          <DemoContent />
-        </div>
+        <Container className="py-20">
+          <Box className="grid grid-cols-3 gap-16">
+            <Box className="grid gap-16">
+              <Widget1 />
+              <Widget2 />
+            </Box>
+            <Box className="col-span-2">
+              <Widget3 />
+            </Box>
+
+          </Box>
+        </Container>
       }
       scroll="content"
     />
